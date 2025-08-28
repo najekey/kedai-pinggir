@@ -69,7 +69,7 @@ nav a:hover:before{
 }
 .hero{
     background: url('images/findin.jpg');
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -80,11 +80,10 @@ nav a:hover:before{
 .hero::after {
     content: '';
     display: block;
-    position: absolute;
+    height: 41%;
     width: 100%;
-    height: 30%;
-    bottom: 0;
-    background: linear-gradient(0deg, rgba(1, 1, 3, 1) 3%, rgba(255, 255, 255, 0) 50%);
+    position: absolute;
+     background: linear-gradient(0deg, rgb(22, 22, 24) 3%, rgba(0, 0, 0, 0) 50%);
 }
 
 .hero h1{
@@ -158,19 +157,48 @@ nav a:hover:before{
 
         .menu-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-            gap: 3rem;
-            position: relative;
-            z-index: 2;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
         }
 
         .menu-item {
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.8), rgba(40, 40, 40, 0.8));
-            padding: 3rem;
+            background: white;
             border-radius: 20px;
-            border: 1px solid rgba(218, 165, 32, 0.2);
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .menu-image {
+            height: 200px;
+            background: linear-gradient(45deg, #ff6b9d, #ffa726);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+        }
+
+        .menu-content {
+            padding: 1.5rem;
+        }
+
+        .menu-item h3 {
+            color: #ff6b9d;
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffa726;
+            margin-top: 1rem;
         }
 
         .menu-item:hover {
@@ -179,7 +207,7 @@ nav a:hover:before{
             box-shadow: 0 20px 40px rgba(218, 165, 32, 0.1);
         }
 
-        .menu-item h3 {
+        /* .menu-item h3 {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             color: #daa520;
@@ -198,7 +226,7 @@ nav a:hover:before{
             font-weight: 700;
             color: #ffd700;
             text-align: right;
-        }
+        } */
 
 
 
