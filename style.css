@@ -10,6 +10,7 @@ body {
     color: #ffffff;
     font-family: Poppins, sans-serif;
     text-align: center;
+    padding-top: 100px;
 }
 
 
@@ -22,18 +23,20 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
-    background: rgba(0, 0, 0, 0.8);
+    background: black;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); */
+    border-bottom: 2px solid #513c28;
+    }
+
 
 header img {
     width: 90px;
-    height: 75px;
+    height: 75px; 
     margin-left: 2rem;
 }
 
@@ -59,17 +62,16 @@ nav a:hover {
 
 nav a:before {
     content: '';
-    width: 6px;
-    height: 5px;
+    width: 0px;
+    height: 2px;
     background: goldenrod;
     position: absolute;
     top: 100%;
-    left: 0;
     transition: .5s;
 }
 
 nav a:hover:before {
-    width: 100%;
+    width: 55%;
 }
 
 #home {
@@ -85,6 +87,7 @@ nav a:hover:before {
     background-position: center;
     background-size: cover;
     position: relative;
+    margin-top: 80px;
 }
 
 .hero::after {
@@ -110,7 +113,6 @@ nav a:hover:before {
     text-decoration: solid;
     color: rgb(255, 254, 248);
     text-shadow: #000 2px 2px 4px;
-    ;
     margin-bottom: 2rem;
     opacity: 3.9;
     font-weight: 400;
@@ -125,7 +127,7 @@ nav a:hover:before {
     margin-top: 1rem;
     display: inline-block;
     padding: 1rem 3rem;
-    background: linear-gradient(45deg, #daa520, #443c0e);
+    background: linear-gradient(45deg, #7e6e18, #daa520 );
     color: #000000;
     text-decoration: none;
     font-weight: 600;
