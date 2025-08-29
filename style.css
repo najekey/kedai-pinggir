@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,300;0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Marcellus+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nata+Sans:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,700&family=Pacifico&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,300;0,400;0,700;1,700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -6,9 +6,13 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: #ffffff;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     padding-top: 100px;
 }
@@ -31,12 +35,12 @@ header {
     z-index: 1000;
     /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); */
     border-bottom: 2px solid #513c28;
-    }
+}
 
 
 header img {
-    width: 90px;
-    height: 75px; 
+    width: 80px;
+    height: 75px;
     margin-left: 2rem;
 }
 
@@ -80,7 +84,7 @@ nav a:hover:before {
 }
 
 .hero {
-    min-height: 100vh; 
+    min-height: 100vh;
     text-align: left;
     background-image: url("images/fine dining.png");
     background-repeat: no-repeat;
@@ -102,6 +106,12 @@ nav a:hover:before {
 
 .hero h1 {
     color: goldenrod;
+    font-family: 'Cinzel', serif;
+    font-size: 250%;
+    text-shadow: #000 2px 2px 4px;
+    margin-bottom: 2rem;
+    opacity: 3.9;
+    font-weight: 700;
     padding-left: 6rem;
     padding-top: 15rem;
     margin-bottom: 2rem;
@@ -109,6 +119,7 @@ nav a:hover:before {
 
 .hero p {
     padding-left: 6rem;
+    font-family: Nata Sans, serif;
     font-size: 18px;
     text-decoration: solid;
     color: rgb(255, 254, 248);
@@ -119,17 +130,18 @@ nav a:hover:before {
     mix-blend-mode: difference;
 }
 
-.hero .btn {
+.hero .cta {
     margin-left: 6rem;
 }
 
-.btn {
+.cta {
     margin-top: 1rem;
     display: inline-block;
     padding: 1rem 3rem;
-    background: linear-gradient(45deg, #7e6e18, #daa520 );
+    background: linear-gradient(45deg, #7e6e18, #daa520);
     color: #000000;
     text-decoration: none;
+    font-family: 'Playfair Display', serif;
     font-weight: 600;
     letter-spacing: 1px;
     border-radius: 50px;
@@ -302,7 +314,8 @@ nav a:hover:before {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.8rem;
+    font-family: 'Playfair Display', serif;
     padding: 3rem;
 }
 
@@ -351,6 +364,8 @@ h2 {
 
 .menu-item h3 {
     color: #c5b53f;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
 }
 
 .menu-item p {
@@ -359,6 +374,7 @@ h2 {
 
 .menu-price {
     font-size: 1.5rem;
+    font-family: 'playfair display', serif;
     font-weight: bold;
     color: lightgreen;
     margin-top: 12px;
@@ -370,17 +386,92 @@ h2 {
     box-shadow: 0 20px 40px rgba(218, 165, 32, 0.1);
 }
 
+.contact .row {
+    display: flex;
+    margin-top: 1rem;
+    background-color: #222;
+}
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .rom form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #7e6e18;
+    border: 1px solid #eee;
+    padding-left: 2rem;
+}
+
+.contact .row form .input-group input{
+   display: flex;
+   padding: 2rem;
+   background: 1.7rem;
+   background: none;
+   color: #fff;
+}
+
+.contact .row form .btn {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: #7e6e18 ;
+  cursor: pointer;
+}
+
 .container .footer {
     margin-top: 60px;
 }
 
 footer {
-    background: #000;
-    color: #888;
-    padding: 20px 0;
-    font-size: 0.9rem;
+    background-color: #b8860b;
     text-align: center;
-    border-top: 1px solid rgba(218, 165, 32, 0.2);
+    padding: 1rem 0 3rem;
+}
+
+footer .socials {
+    padding: 1rem 0;
+}
+
+footer .socials a {
+    color: #fff;
+    margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+    color: #010101;
+}
+
+footer .links {
+    margin-bottom: 1.4rem;
+}
+
+footer .links a {
+    color: #fff;
+    padding: 0.7rem 1rem;
+}
+
+footer .credit {
+    font-size: 0.8rem;
+}
+
+footer .credit p {
+    color: #101010;
+    font-weight: 700;
 }
 
 @media (max-width: 768px) {
